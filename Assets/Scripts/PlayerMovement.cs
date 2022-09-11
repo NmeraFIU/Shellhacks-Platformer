@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     float jumpCoolDown;
     float jumpPower = 7.0f;
 
+    int dcounter = 0;
+
+    public GameObject timer;
+
     private Animator anim;
     private SpriteRenderer sprite;
     private float dirX = 0f;
@@ -141,6 +145,9 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(collision.gameObject.transform.position);
             Debug.Log("Checkpoint reached!");
             respawnPoint = collision.gameObject.transform.position;
-        }
+        } else if (collision.gameObject.CompareTag("Damage")) {
+            transform.position = respawnPoint;
+            dcounter++;
+        } 
     }
 }

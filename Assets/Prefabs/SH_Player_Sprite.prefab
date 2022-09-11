@@ -85,7 +85,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4177672152247613837
@@ -105,6 +105,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   feet: {fileID: 4177672153488084601}
+  timer: {fileID: 0}
   damageDetector: {fileID: 0}
 --- !u!50 &4177672152247613825
 Rigidbody2D:
@@ -140,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10823214, y: -0.3306803}
+  m_Offset: {x: -0.06811094, y: -0.5613725}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -151,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1810853, y: 3.1501164}
+  m_Size: {x: 1.7598226, y: 2.6887321}
   m_EdgeRadius: 0
 --- !u!1 &4177672153488084600
 GameObject:
